@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | pin-affi</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.9;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 26px; margin-bottom: 4px; }
+    .updated { color: #888; font-size: 14px; margin-top: 0; }
+    h2 { font-size: 19px; margin-top: 36px; border-bottom: 2px solid #f0f0f0; padding-bottom: 6px; }
+    ul { padding-left: 1.3em; }
+    a { color: #e60023; }
+    .back { display: inline-block; margin-bottom: 24px; }
+    footer { text-align: center; color: #999; font-size: 13px; margin-top: 48px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./index.html">← pin-affi トップへ</a>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日: 2026年6月23日</p>
+
+    <p>
+      本プライバシーポリシーは、mocolab（以下「運営者」）が提供する個人用ツール
+      「pin-affi」（以下「本アプリ」）における、情報の取り扱いについて定めるものです。
+      本アプリは運営者本人が自身の Pinterest アカウントを運用するための個人用ツールであり、
+      一般向けに公開・販売するものではありません。
+    </p>
+
+    <h2>1. 取得する情報</h2>
+    <ul>
+      <li><strong>アカウント情報</strong>: ログインに用いるメールアドレス。</li>
+      <li><strong>コンテンツ情報</strong>: 利用者が作成したピンのタイトル・説明・画像・
+        ボード情報・アフィリエイトリンク・予約日時など。</li>
+      <li><strong>Pinterest 連携情報</strong>: Pinterest 公式 API を利用するための
+        アクセストークン／リフレッシュトークン、および連携アカウントの識別子。</li>
+    </ul>
+
+    <h2>2. 利用目的</h2>
+    <ul>
+      <li>本アプリの認証およびデータの保存・表示のため。</li>
+      <li>利用者本人の指示に基づき、Pinterest 公式 API（v5）を通じて
+        ピンの作成・予約投稿を行うため。</li>
+      <li>投稿状況の記録、エラーの把握、機能改善のため。</li>
+    </ul>
+
+    <h2>3. Pinterest データの取り扱い</h2>
+    <p>
+      本アプリは Pinterest API を利用し、利用者本人が連携を許可した範囲（ボードの参照、
+      ピンの作成・参照、アカウント情報の参照）でのみ Pinterest のデータにアクセスします。
+      取得した情報は本アプリの機能提供の目的にのみ使用し、
+      <strong>第三者への提供・販売・広告目的での利用は行いません</strong>。
+      本アプリの利用は、Pinterest の
+      <a href="https://developers.pinterest.com/terms/" target="_blank" rel="noopener">開発者向け規約</a>
+      に従います。
+    </p>
+
+    <h2>4. データの保存と保護</h2>
+    <ul>
+      <li>データは Supabase（PostgreSQL）上に保存されます。</li>
+      <li>各データは行レベルセキュリティ（RLS）により、本人のみがアクセスできるよう制御しています。</li>
+      <li>Pinterest のアクセストークン等の認証情報は<strong>暗号化して保存</strong>し、
+        クライアント（アプリ）からは参照できない構成としています。</li>
+    </ul>
+
+    <h2>5. 第三者サービス</h2>
+    <p>本アプリは以下の外部サービスを利用します。各サービスのプライバシーポリシーが適用されます。</p>
+    <ul>
+      <li>Pinterest（コンテンツの投稿・参照）</li>
+      <li>Supabase（認証・データベース・ストレージ）</li>
+    </ul>
+
+    <h2>6. データの削除</h2>
+    <p>
+      利用者はアプリ内でピン等のデータを削除できます。Pinterest 連携の解除や
+      アカウントの削除を希望する場合は、下記の連絡先までご連絡ください。
+      連携解除後、保存されたトークンは無効化・削除されます。
+    </p>
+
+    <h2>7. 改定</h2>
+    <p>本ポリシーは必要に応じて改定されることがあります。改定時は本ページにて更新します。</p>
+
+    <h2>8. お問い合わせ</h2>
+    <p>
+      本ポリシーに関するお問い合わせ先:
+      <a href="mailto:mocoworkspace@gmail.com">mocoworkspace@gmail.com</a>
+    </p>
+
+    <footer>© 2026 mocolab</footer>
+  </div>
+</body>
+</html>
